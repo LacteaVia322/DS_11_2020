@@ -1,0 +1,7 @@
+C:\Users\Lactea Via\source\repos\serverH\server\bin\Release\server.exe.config
+C:\Users\Lactea Via\source\repos\serverH\server\bin\Release\server.exe
+C:\Users\Lactea Via\source\repos\serverH\server\bin\Release\server.pdb
+C:\Users\Lactea Via\source\repos\serverH\server\obj\Release\serverH.csproj.CoreCompileInputs.cache
+C:\Users\Lactea Via\source\repos\serverH\server\obj\Release\server.exe
+C:\Users\Lactea Via\source\repos\serverH\server\obj\Release\server.pdb
+C:\Users\Lactea Via\source\repos\serverH\server\obj\Release\serverH.csprojAssemblyReference.cache
