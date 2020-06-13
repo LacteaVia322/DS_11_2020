@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://endpoint.service/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="HostelServiceService" targetNamespace="http://endpoint.service/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/ws02/HostelService?xsd=1" namespace="http://endpoint.service/" />
+    </xsd:schema>
+  </types>
+  <message name="getAllHostel">
+    <part name="parameters" element="tns:getAllHostel" />
+  </message>
+  <message name="getAllHostelResponse">
+    <part name="parameters" element="tns:getAllHostelResponse" />
+  </message>
+  <message name="setNewHostel">
+    <part name="parameters" element="tns:setNewHostel" />
+  </message>
+  <message name="setNewHostelResponse">
+    <part name="parameters" element="tns:setNewHostelResponse" />
+  </message>
+  <message name="setDelHostel">
+    <part name="parameters" element="tns:setDelHostel" />
+  </message>
+  <message name="setDelHostelResponse">
+    <part name="parameters" element="tns:setDelHostelResponse" />
+  </message>
+  <message name="getSumOfHostel">
+    <part name="parameters" element="tns:getSumOfHostel" />
+  </message>
+  <message name="getSumOfHostelResponse">
+    <part name="parameters" element="tns:getSumOfHostelResponse" />
+  </message>
+  <portType name="HostelService">
+    <operation name="getAllHostel">
+      <input wsam:Action="http://endpoint.service/HostelService/getAllHostelRequest" message="tns:getAllHostel" />
+      <output wsam:Action="http://endpoint.service/HostelService/getAllHostelResponse" message="tns:getAllHostelResponse" />
+    </operation>
+    <operation name="setNewHostel">
+      <input wsam:Action="http://endpoint.service/HostelService/setNewHostelRequest" message="tns:setNewHostel" />
+      <output wsam:Action="http://endpoint.service/HostelService/setNewHostelResponse" message="tns:setNewHostelResponse" />
+    </operation>
+    <operation name="setDelHostel">
+      <input wsam:Action="http://endpoint.service/HostelService/setDelHostelRequest" message="tns:setDelHostel" />
+      <output wsam:Action="http://endpoint.service/HostelService/setDelHostelResponse" message="tns:setDelHostelResponse" />
+    </operation>
+    <operation name="getSumOfHostel">
+      <input wsam:Action="http://endpoint.service/HostelService/getSumOfHostelRequest" message="tns:getSumOfHostel" />
+      <output wsam:Action="http://endpoint.service/HostelService/getSumOfHostelResponse" message="tns:getSumOfHostelResponse" />
+    </operation>
+  </portType>
+  <binding name="HostelServicePortBinding" type="tns:HostelService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="getAllHostel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setNewHostel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="setDelHostel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="getSumOfHostel">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="HostelServiceService">
+    <port name="HostelServicePort" binding="tns:HostelServicePortBinding">
+      <soap:address location="http://localhost:8080/ws02/HostelService" />
+    </port>
+  </service>
+</definitions>

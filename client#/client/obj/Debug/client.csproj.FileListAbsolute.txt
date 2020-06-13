@@ -1,0 +1,14 @@
+C:\Users\Lactea Via\source\repos\client\client\bin\Debug\client.exe.config
+C:\Users\Lactea Via\source\repos\client\client\bin\Debug\client.exe
+C:\Users\Lactea Via\source\repos\client\client\bin\Debug\client.pdb
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.AddBooking.resources
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.AddServices.resources
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.Form1.resources
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.exe
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.pdb
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.Booking.resources
+C:\Users\Lactea Via\source\repos\client\client\obj\Debug\client.Services.resources

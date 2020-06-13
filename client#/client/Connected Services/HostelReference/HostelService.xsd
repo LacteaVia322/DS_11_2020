@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://endpoint.service/" targetNamespace="http://endpoint.service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getAllHostel" type="tns:getAllHostel" />
+  <xs:element name="getAllHostelResponse" type="tns:getAllHostelResponse" />
+  <xs:element name="getSumOfHostel" type="tns:getSumOfHostel" />
+  <xs:element name="getSumOfHostelResponse" type="tns:getSumOfHostelResponse" />
+  <xs:element name="setDelHostel" type="tns:setDelHostel" />
+  <xs:element name="setDelHostelResponse" type="tns:setDelHostelResponse" />
+  <xs:element name="setNewHostel" type="tns:setNewHostel" />
+  <xs:element name="setNewHostelResponse" type="tns:setNewHostelResponse" />
+  <xs:complexType name="setNewHostel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:hostel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hostel">
+    <xs:sequence>
+      <xs:element name="kol" type="xs:int" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="number" type="xs:int" />
+      <xs:element name="price" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNewHostelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfHostel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listOfHostel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:hostel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDelHostel">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDelHostelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfHostel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getAllHostel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllHostelResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfHostel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSumOfHostel">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSumOfHostelResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

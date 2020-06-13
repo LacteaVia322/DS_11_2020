@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://endpoint.service/" targetNamespace="http://endpoint.service/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getAllService" type="tns:getAllService" />
+  <xs:element name="getAllServiceResponse" type="tns:getAllServiceResponse" />
+  <xs:element name="getSumOfService" type="tns:getSumOfService" />
+  <xs:element name="getSumOfServiceResponse" type="tns:getSumOfServiceResponse" />
+  <xs:element name="setDelService" type="tns:setDelService" />
+  <xs:element name="setDelServiceResponse" type="tns:setDelServiceResponse" />
+  <xs:element name="setNewService" type="tns:setNewService" />
+  <xs:element name="setNewServiceResponse" type="tns:setNewServiceResponse" />
+  <xs:complexType name="getAllService">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getAllServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfService" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listOfService">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="item" nillable="true" type="tns:service" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="service">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="hostel" type="xs:string" />
+      <xs:element minOccurs="0" name="master" type="xs:string" />
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+      <xs:element name="number" type="xs:int" />
+      <xs:element name="price" type="xs:int" />
+      <xs:element minOccurs="0" name="time" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="getSumOfService">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="getSumOfServiceResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDelService">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setDelServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfService" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNewService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:service" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="setNewServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:listOfService" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
